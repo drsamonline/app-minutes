@@ -1,0 +1,27 @@
+NOTICE
+======
+
+Minutes — https://github.com/drsamonline/app-minutes
+Copyright 2026 Dr Sohil Momin. Licensed under PolyForm Noncommercial 1.0.0 (see LICENSE).
+
+Third-party components
+----------------------
+
+None. Minutes has no third-party dependency and no CDN.
+
+Vendored from this project's own kits (same licence, same author), copied verbatim on
+25/11/2026:
+
+- web-kit 0.1.0 — docs/play/web-kit.js — the offline shell, storage helpers and PWA registration
+- export-kit 1.0.0 — docs/play/export-kit.js — Blob download, used to write the minutes
+
+Neither kit is modified. Neither makes a network request.
+
+On recording and transcription
+------------------------------
+
+Both specs this app absorbs forbid the same thing: no audio capture and no transcription. There is
+none here — no MediaRecorder, no speech API, no transcription service. The app structures what the
+person types, which is why it works with the microphone off, in a room with no signal, and on a
+machine with no battery left. Topic times come from the moments the person pressed "Mark a new topic
+now"; pasted minutes carry no clock, and the app does not invent one.
