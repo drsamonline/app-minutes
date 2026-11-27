@@ -8,6 +8,7 @@ Decisions and actions, separated as you type — **so the follow-up list exists 
 - **Plan row:** #12 of 37 in `drsamonline/forge` → `QUEUE/PLAN.json`
 - **Specs absorbed:** `app-minutes` (lead), `app-meeting-autopsy`
 - **Licence:** PolyForm Noncommercial 1.0.0
+- **Sponsor:** [github.com/sponsors/drsamonline](https://github.com/sponsors/drsamonline) — free, offline, no account
 
 ## Status
 
