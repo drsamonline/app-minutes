@@ -194,8 +194,8 @@
     state.stamps[clean] = Date.now();
     els.notes.value = els.notes.value + (els.notes.value.endsWith("\n") || !els.notes.value ? "" : "\n") + "topic: " + clean + "\n";
     reparse();
-    persist();
-    setStatus("ok", "Topic marked: " + clean + ".");
+    var saved = persist();
+    if (saved) setStatus("ok", "Topic marked: " + clean + ".");
   });
 
   els.exportBtn.addEventListener("click", doExport);
@@ -216,8 +216,8 @@
       "a: Tell the landlord we are staying @Priya"
     ].join("\n");
     reparse();
-    persist();
-    setStatus("ok", "Example loaded: two decisions, three actions, one of them with no owner.");
+    var saved = persist();
+    if (saved) setStatus("ok", "Example loaded: two decisions, three actions, one of them with no owner.");
   });
 
   /* ------------------------------------------------------------ start up */
